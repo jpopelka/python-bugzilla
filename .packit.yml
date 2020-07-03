@@ -1,0 +1,11 @@
+jobs:
+- job: tests
+  trigger:
+    - pull_request
+    - commit
+  metadata:
+    targets:
+      - fedora-all
+      - epel-7-x86_64
+      - epel-8-x86_64
+    branch: master
